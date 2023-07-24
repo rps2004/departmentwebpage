@@ -1,0 +1,92 @@
+/* Updated CSS for the academic information boxes */
+.academic-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.academic-box {
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+.right-box {
+  align-self: flex-end; /* Move the "Academic Schedule" box to the right */
+}
+
+.left-box {
+  align-self: flex-start; /* Keep the "Honours Programme" box on the left */
+}
+
+.image-area {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.side-image {
+  max-width: 150px;
+  height: auto;
+}
+
+.academic-box h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin: 0 0 10px;
+}
+
+.academic-box .content {
+  font-size: 18px;
+  color: #444;
+  margin: 0;
+}
+
+.academic-box ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Position images in the academic boxes */
+.left-box .image-area {
+  margin-right: 20px;
+}
+
+.right-box .image-area {
+  margin-left: 20px;
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 768px) {
+  .academic-container {
+    flex-direction: column;
+  }
+
+  .academic-box {
+    max-width: 100%;
+  }
+
+  .right-box,
+  .left-box {
+    align-self: auto;
+  }
+
+  .left-box .image-area,
+  .right-box .image-area {
+    margin: 10px auto 20px;
+  }
+}
+
+  
+  
